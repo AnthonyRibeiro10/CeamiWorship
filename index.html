@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Louvores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Busca de Louvores</h1>
+        <div class="filtro">
+            <label for="Tom">Selecione o Tom:</label>
+            <select id="Tom">
+                <option value="Qualquer">Qualquer</option>
+                <option value="G">G</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="A">A</option>
+            </select>
+
+            <label for="Ministro">Selecione o(a) Ministro(a):</label>
+            <select id="Ministro">
+                <option value="Qualquer">Qualquer</option>
+                <option value="Tielen">Tielen</option>
+                <option value="Nicolas">Nicolas</option>
+                <option value="Keila">Keila</option>
+                <option value="Ana">Ana</option>
+                <option value="Daniela">Daniela</option>
+                <option value="Eduarda">Eduarda</option>
+                <option value="Tainara">Tainara</option>
+            </select>
+
+            <button onclick="buscarLouvores()">Buscar</button>
+        </div>
+
+      <table id="tabelaLouvores" class="tabela-louvores">
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Tom</th>
+                  <th>Ministro</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Aqui serão adicionados os louvores -->
+          </tbody>
+      </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
